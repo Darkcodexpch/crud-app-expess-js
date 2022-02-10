@@ -1,0 +1,20 @@
+{
+  "name": "crudapp",
+  "version": "1.0.0",
+  "description": "crud package using express package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkcodexpch/crud-app-expess-js.git"
+  },
+  "author": "darkcodexpch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darkcodexpch/crud-app-expess-js/issues"
+  },
+  "homepage": "https://github.com/Darkcodexpch/crud-app-expess-js#readme"
+}
