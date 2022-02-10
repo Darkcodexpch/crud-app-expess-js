@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <form onsubmit="sentToServer(); return false">
+        <input type="text" id="text" placeholder="enter something" />
+        <input type="submit" value="sent to server" />
+    </form>
+
+    <script>
+        const baseURl = "http://localhost:3000";
+        function sentToServer() {
+            let UserText = document.getElementById("text").value;
+            axios.post(`${baseURl}/add`, { text: UserText })
+                .then(function (response) {
+                    let responseData = response.data;
+                    console.log("responseData", responseData);
+                })
+                .catch(function(err){
+                    console.log(err)
+
+                })
+        }
+
+    </script>
+</body>
+
+</html>
